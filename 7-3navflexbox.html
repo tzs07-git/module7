@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center;
+            background-color: palegoldenrod;
+            border-radius: 5px;
+            height: 70px;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            margin: 0px 10px;
+
+        }
+        nav a button{
+            font-size: 30px;
+            background-color: lightsalmon;
+            border-radius: 5px;
+            padding: 3px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn{
+             font-size: 17px;
+            background-color: lightsalmon;
+            border-radius: 5px;
+            font-weight: bold;
+            /* padding: 3px 20px; */
+            border: none;
+            cursor: pointer;
+        }
+
+        nav a button:hover{
+            background-color: green;
+            transition: 0.5s ease-in-out;
+            color: whitesmoke;
+        }
+
+        .login{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* border: 2px solid saddlebrown; */
+            width: 30%;
+        }
+
+        .login input{
+            margin-top: 20px;
+            height: 2.5em;
+            border-radius: 5px;
+        }
+
+        .login-con{
+            background-color: paleturquoise;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid seagreen; */
+            height: 90vh;
+        }
+        .login-con .login h2{
+            font-size: 40px;
+            text-align: center;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Succses</a>
+        <a href="">Contact</a>
+        </div>
+        <a href=""><button>Login</button></a>
+    </nav>
+
+    <div class="login-con">
+        <form class="login">
+
+        <h2>Please Login </h2>
+        <input type="email" name="" placeholder="Your email" id="" required>
+        <input type="password" name="" placeholder="Your Password" id="" required>
+        <input class="btn" type="submit" value="Submit">
+    </form>
+    </div>
+</body>
+</html>
